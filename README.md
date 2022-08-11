@@ -37,7 +37,7 @@ if (ask == true) {
 }
 ```
 
-## 2.配置AccountData.js
+## 2.配置AccountData.json
 
 需要填写三个数据 放入对应字符:""里，需要保证被”“包裹
 
