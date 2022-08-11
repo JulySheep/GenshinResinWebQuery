@@ -24,7 +24,7 @@ else {
 }
 //尘歌壶
 document.getElementById("coin").innerHTML = data.current_home_coin + '/' + data.max_home_coin
-ExHour = ~~(data.home_coin_recovery_time / 3600 % 60)
+ExHour = ~~(data.home_coin_recovery_time / 3600)
 ExMinute = ~~(data.home_coin_recovery_time / 60 % 60)
 document.getElementById("coin_time").innerHTML = ExHour + '时' + ExMinute + '分'
 //探险
@@ -43,7 +43,7 @@ for (i = 0; i < data.expeditions.length; i++) {
         document.getElementById("status_" + i).innerHTML = "已完成"
     }
     else if (data.expeditions[i].status == "Ongoing") {
-        ExHour = ~~(data.expeditions[i].remained_time / 3600 % 60)
+        ExHour = ~~(data.expeditions[i].remained_time / 3600)
         ExMinute = ~~(data.expeditions[i].remained_time / 60 % 60)
         document.getElementById("status_" + i).innerHTML = ExHour + "时" + ExMinute + "分"
     }
